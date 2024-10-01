@@ -1,0 +1,21 @@
+@host = https://localhost:7063
+
+POST {{host}}/auth/login
+content-type: application/json
+
+{
+    "email": "zeeshan@noonpayments.com",
+    "password": "P@ssword!"
+}
+
+###
+
+POST {{host}}/auth/register
+content-type: application/json
+
+{
+    "firstName": "Zeeshan",
+    "lastName": "Iqbal",
+    "email": "zeeshan@noonpayments.com",
+    "password": "P@ssword!"
+}

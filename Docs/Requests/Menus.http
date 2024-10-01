@@ -1,0 +1,23 @@
+@host = https://localhost:7063
+@hostId = b2cb3007-6594-43d3-be85-5794d4b5806b
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiMmNiMzAwNy02NTk0LTQzZDMtYmU4NS01Nzk0ZDRiNTgwNmIiLCJnaXZlbl9uYW1lIjoiWmVlc2hhbiIsImZhbWlseV9uYW1lIjoiSXFiYWwiLCJqdGkiOiJjZDAwZDgyMS0yMTFhLTRmYjQtYTU5YS05YTlkZWQ3MjI4NmEiLCJleHAiOjE3MjUyMjU3NTgsImlzcyI6IkJ1YmVyIiwiYXVkIjoiQnViZXIifQ.I4VrAfsjY1syJnjOM3ZWq7n7yTggDp2zNJIfUbMsiec
+POST {{host}}/hosts/{{hostId}}/menus
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "name": "Yummy",
+    "description": "Yummy Description",
+    "sections": [
+        {
+            "name": "Appetizers",
+            "description": "Warm up!!",
+            "items": [
+                {
+                    "name": "tomato soup",
+                    "description": "warm tomato soup serverd with bread."
+                }
+            ]
+        }
+    ]    
+}
